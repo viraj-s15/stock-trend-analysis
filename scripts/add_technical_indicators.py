@@ -28,8 +28,7 @@ def expo_weighted_moving_average(data, ndays):
     EMA = pd.Series(data['Close Price'].ewm(span = ndays, min_periods = ndays - 1).mean(), 
                  name = 'EWMA' + str(ndays)) 
     data = data.join(EMA) 
-    return datadf.to_csv("../data/titan_data_indicators.csv", index=False)
-
+    return data
 
 def bollinger_bands(data, window):
     """
@@ -93,8 +92,7 @@ def ease_of_movement(data, ndays):
     EMV = dm / br 
     EMV_MA = pd.Series(EMV.rolling(ndays).mean(), name = 'EMV') 
     data = data.join(EMV_MA) 
-    return data pd.to_csv("../data/titan_data_indicators.csv", index=False)
-
+    return data 
 n = 5
 bb = bollinger_bands(df,n)
 df = bb
