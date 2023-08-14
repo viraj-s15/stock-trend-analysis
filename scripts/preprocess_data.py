@@ -3,7 +3,7 @@ import numpy as np
 
 from NSEDownload import stocks
 
-# ### Creating a function to streamline the process
+# Creating a function to streamline the process
 
 def create_df(stock_code:str) -> pd.DataFrame:
     """
