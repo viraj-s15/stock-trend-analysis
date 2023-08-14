@@ -11,7 +11,6 @@ filename = "../data/titan_weekly_data.csv"
 df = pd.read_csv(filename)
 df.head()
 
-# %%
 def simple_moving_average(data:pd.DataFrame, ndays:int): 
     """
     Function to find the Simple Moving Average. Since this data is weekly, this variable can be updated on a weekly basis, i.e. 
@@ -94,7 +93,7 @@ def ease_of_movement(data, ndays):
     EMV = dm / br 
     EMV_MA = pd.Series(EMV.rolling(ndays).mean(), name = 'EMV') 
     data = data.join(EMV_MA) 
-    return data df.to_csv("../data/titan_data_indicators.csv", index=False)
+    return data pd.to_csv("../data/titan_data_indicators.csv", index=False)
 
 n = 5
 bb = bollinger_bands(df,n)
