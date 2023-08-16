@@ -7,6 +7,7 @@
   - [About ](#about-)
   - [Getting Started ](#getting-started-)
   - [Usage ](#usage-)
+  - [Warning](#warning)
 
 ## About <a name = "about"></a>
 
@@ -34,3 +35,7 @@ There are 4 main notebooks (for now). This `notebooks/weekly_data_creation.ipynb
 The output of this notebook must be ran thorugh the `notebooks/model.ipynb`. This notebook will create the model and perform inference as well. 
 
 This project is under development. I will add a neural network at some point to continue this.
+
+## Warning
+
+This branch is where I actively work and utilise the notebooks/scripts there is a very real possibility that something is broken and does not work, **DO NOT** clone this branch. 
