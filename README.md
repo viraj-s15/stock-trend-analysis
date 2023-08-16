@@ -11,11 +11,7 @@
 
 ## About <a name = "about"></a>
 
-Using XGDBoost to analyse the gradients of stocks, using a regressive algorithm with weights depending  on the data
-
-## Getting Started <a name = "getting_started"></a>
-
-Firstly, you need to have a setup for notebooks, either on Jupyter/VSCode/Neovim,etc. To install all of the dependencies, first create a new environment and install the deps.
+Using XGDBoost to analyse the gradients of stocks, using a regressive algorithupdated readme
 
 This will create the env and activate it
 
