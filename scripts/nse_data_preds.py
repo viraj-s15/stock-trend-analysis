@@ -160,8 +160,6 @@ X_test  = test_df.drop(columns=['Close'])
 X_train.info()
 
 
-%%time
-
 parameters = {
     'n_estimators': [100, 200, 300, 400],
     'learning_rate': [0.001, 0.005, 0.01, 0.05],
@@ -171,31 +169,18 @@ parameters = {
 }
 
 eval_set = [(X_train, y_train), (X_valid, y_valid)]
-model = xgb.XGBRegressor(eval_set=eval_set, objective='reg:squarederror')
-clf = GridSearchCV(model, parameters)
+temp_model = xgb.XGBRegressor(eval_set=eval_set, objective='reg:squarederror')
+clf = GridSearchCV(temp_model, parameters)
 
 clf.fit(X_train, y_train)
 
 print(f'Best params: {clf.best_params_}')
 print(f'Best validation score = {clf.best_score_}')
 
-
-%%time
-
-parameters = {
-    'n_estimators': 800,
-    'learning_rate': 0.01,
-    'max_depth': 64,
-    'gamma': 0.001,
-    'random_state': 42
-}
-
 model = xgb.XGBRegressor(**clf.best_params_, objective='reg:squarederror')
 # model = xgb.XGBRegressor(**parameters, objective='reg:squarederror')
 
-
 model.fit(X_train, y_train, eval_set=eval_set, verbose=False)
-
 
 plot_importance(model)
 
