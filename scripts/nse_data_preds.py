@@ -22,9 +22,6 @@ from warnings import simplefilter
 simplefilter(action='ignore', category=FutureWarning)
 simplefilter(action='ignore', category=DeprecationWarning)
 
-# Show charts when running kernel
-init_notebook_mode(connected=True)
-
 layout=go.Layout(paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(250,250,250,0.8)')
 fig = go.Figure(layout=layout)
 templated_fig = pio.to_templated(fig)
@@ -55,7 +52,7 @@ fig = make_subplots(rows=2, cols=1)
 fig.add_trace(go.Ohlc(x=df.Date,
                       open=df.Open,
                       high=df.High,
-                      low=df.Low,
+                      low=df.Losw,
                       close=df.Close,
                       name='Price'), row=1, col=1)
 
