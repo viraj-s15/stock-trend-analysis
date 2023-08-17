@@ -5,13 +5,12 @@
 - [Stock Trend Analyzer](#stock-trend-analyzer)
   - [Table of Contents](#table-of-contents)
   - [About ](#about-)
-  - [Getting Started ](#getting-started-)
   - [Usage ](#usage-)
   - [Warning](#warning)
 
 ## About <a name = "about"></a>
 
-Using XGDBoost to analyse the gradients of stocks, using a regressive algorithupdated readme
+Using XGDBoost to analyse the gradients of stocks, using a regressive algorithm
 
 This will create the env and activate it
 
