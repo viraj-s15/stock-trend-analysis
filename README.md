@@ -1,7 +1,7 @@
 # Stock Trend Analyzer
 
 ## Note:
-You are on the wrong branch, this is where I actively make changed and a number of things probably do not work. Go back to the main branch and clone that one.
+You are on the wrong branch, this is where I actively make changes here and a number of things probably do not work. Go back to the main branch and clone that one.
 
 ## Table of Contents
 
