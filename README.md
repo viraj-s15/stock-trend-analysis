@@ -1,12 +1,8 @@
 # Stock Trend Analyzer
 
-## Note:
-You are on the wrong branch, this is where I actively make changed and a number of things probably do not work. Go back to the main branch and clone that one.
-
 ## Table of Contents
 
 - [Stock Trend Analyzer](#stock-trend-analyzer)
-  - [Note:](#note)
   - [Table of Contents](#table-of-contents)
   - [About ](#about-)
   - [Usage ](#usage-)
