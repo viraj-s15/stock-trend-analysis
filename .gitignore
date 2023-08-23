@@ -1,3 +1,5 @@
 NSEDownload
 .venv
 .vscode
+data/1000_stocks
+data/stock_day_price_202101_202308.csv
