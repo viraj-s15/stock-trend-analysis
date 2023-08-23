@@ -5,3 +5,4 @@ data/1000_stocks
 data/stock_day_price_202101_202308.csv
 preds/1000_companies_preds
 preds/1000_companies_preds_main
+data/1000_stocks_small
