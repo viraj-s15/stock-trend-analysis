@@ -10,7 +10,7 @@ def get_weekly_acc(df=df):
     actual = df["Actual Weekly Trend"].to_list()
     for i in range(len(pred)):
         if pred[i] == actual[i]:
-            acc += 1/(len(df) // 1.45)
+            acc += 1/(len(df))
     print(f"Weekly Accuracy -> {acc}")
     return acc
 
@@ -20,7 +20,7 @@ def get_monthly_acc(df=df):
     actual = df["Actual Monthly Trend"]
     for i in range(len(pred)):
         if pred[i] == actual[i]:
-            acc += 1/(len(df) // 1.2)
+            acc += 1/(len(df))
     print(f"Monthly Accuracy -> {acc}")
     return acc
     
