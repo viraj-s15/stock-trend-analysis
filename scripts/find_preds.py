@@ -31,7 +31,7 @@ set_seeds()
 
 import os
 
-filenames = os.listdir("../data/1000_stocks")
+filenames = os.listdir("../data/1000_stocks_small")
 
 def create_preds(name:str):
     
@@ -381,7 +381,7 @@ def create_preds(name:str):
     temp["Total Acc"] = (weekly_accuracy + monthly_accuracy) / 2
 
 
-    temp.to_csv(f"../preds/1000_companies_preds/{name}_trend_preds.csv",index=False)
+    temp.to_csv(f"../preds/1000_companies_preds/{name}",index=False)
 
 
 for i in filenames:
