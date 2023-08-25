@@ -2,9 +2,9 @@ import pandas as pd
 import numpy as np
 
 
+
 filename = "../preds/all_preds_with_actual.csv"
 df = pd.read_csv(filename)
-
 
 def get_weekly_acc(df=df):
     acc = 0
@@ -16,7 +16,6 @@ def get_weekly_acc(df=df):
     print(f"Weekly Accuracy -> {acc}")
     return acc
 
-
 def get_monthly_acc(df=df):
     acc = 0
     pred = df['Monthly Predictions']
@@ -26,8 +25,7 @@ def get_monthly_acc(df=df):
             acc += 1/(len(df))
     print(f"Monthly Accuracy -> {acc}")
     return acc
-
-
+    
 if __name__ == "__main__":
     weekly = get_weekly_acc()
     monthly = get_monthly_acc()
