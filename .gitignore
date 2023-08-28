@@ -7,3 +7,6 @@ preds/1000_companies_preds
 preds/1000_companies_preds_main
 data/1000_stocks_small
 preds/.~lock.all_preds.csv#
+notebooks/test.ipynb
+.virtual_documents/notebooks/test.ipynb
+notebooks/.ipynb_checkpoints/test-checkpoint.ipynb
