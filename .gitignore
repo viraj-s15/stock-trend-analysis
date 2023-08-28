@@ -7,3 +7,4 @@ preds/1000_companies_preds
 preds/1000_companies_preds_main
 data/1000_stocks_small
 preds/.~lock.all_preds.csv#
+report.pdf
