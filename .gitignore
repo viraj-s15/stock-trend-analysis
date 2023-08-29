@@ -1,6 +1,7 @@
 NSEDownload
 .venv
 .vscode
+<<<<<<< Updated upstream
 data/1000_stocks
 data/stock_day_price_202101_202308.csv
 preds/1000_companies_preds
@@ -10,3 +11,8 @@ preds/.~lock.all_preds.csv#
 notebooks/test.ipynb
 .virtual_documents/notebooks/test.ipynb
 notebooks/.ipynb_checkpoints/test-checkpoint.ipynb
+=======
+.virtual_documents
+data/1000_stocks
+notebooks/.ipynb_checkpoints
+>>>>>>> Stashed changes
