@@ -13,3 +13,4 @@ for file in tqdm(filenames):
     df.sort_values(by=["date"], inplace=True)
     df = df.iloc[:df_len, :]
     df.to_csv(f"../data/1000_stocks_small/{file}", index=False)
+
