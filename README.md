@@ -48,7 +48,7 @@ From the models created, we can come to the following conclusions
 - There are three cases mentioned above the in the *Methodoloy* section, the average accuracy using measures of central tendency will be given below.
 
 
-- **1) XGDBoost**: 
+- **1) XGBoost**: 
 
 | Case | Mean | Median | Mode   | Mean Deviation | Standard Deviation |
 |:----:| :----: |:------:| :------: | :--------------: |:------------------:|
